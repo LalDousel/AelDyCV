@@ -1,0 +1,185 @@
+#main-container {
+  width: 100%;
+  display: flex;
+  background-image: url('https://images.pexels.com/photos/722680/light-bokeh-colors-blur-722680.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260g');
+  background-size: cover;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+header{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f4f4f4;
+  opacity: 0.7;
+  text-align: center;
+}
+.card-one p {
+  color: #ffe8d6;
+  text-align: center;
+}
+.card-two p {
+  color: #ffe8d6;
+  text-align: center;
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-stretch: expanded;
+}
+.card-three p {
+  color: #ffe8d6;
+  text-align: center;
+}
+.card-one {
+  padding: 30px;
+  flex: 1;
+  border: 1px solid rgba(225,225,225,0.4);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+.card-two {
+  padding: 30px;
+  flex: 1;
+  border: 1px solid rgba(225,225,225,0.4);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.card-three {
+  padding: 30px;
+  flex: 1;
+  border: 1px solid rgba(225,225,225,0.4);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.card-one:hover {
+
+  transform: scale(1.5);
+  backdrop-filter: blur(10px);
+  background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+.card-one:active {
+
+  transform: scale(1.5);
+  backdrop-filter: blur(10px);
+  background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+.card-two:hover {
+
+  transform: scale(1.5);
+  backdrop-filter: blur(10px);
+  background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+.card-two:active {
+
+  transform: scale(1.5);
+  backdrop-filter: blur(10px);
+  background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+.card-three:hover {
+
+  transform: scale(1.5);
+  backdrop-filter: blur(10px);
+  background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+.card-three:active {
+
+  transform: scale(1.5);
+  backdrop-filter: blur(10px);
+  background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+.btn {
+  color: white;
+  margin-left: 40%;
+  border-radius: 15px;
+  border: 1px solid rgba(225,225,225,0.4);
+ background: radial-gradient(at 50% 0%, rgba(0,0,0,0),rgba(255,255,255,0.01));
+ transform-style: preserve-3d;
+ transition: all 0.9s ease;
+
+
+}
+.btn:hover, .btn:active {
+  transform: scaleZ(1.05) rotateY(360deg);
+}
+
+
+
+/* ACCORDION */
+
+label {
+  text-align: center;
+}
+.insidecontainer p {
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.accordionholder {
+  max-width: 480px;
+  margin: 30px auto;
+}
+.accordionholder input {
+  display:none;
+}
+
+.accordionholder label {
+  display: block;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  background: #0083B0;
+  font-family: 'Roboto',sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+.insidecontainer {
+  display: block;
+  height: 0;
+  padding: 0 15px;
+  background:  #0083B0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.accordionholder input:checked ~ .insidecontainer {
+  height: 250px;
+  overflow: scroll;
+}
+.accordionholder label:hover, .accordionholder label:active {
+  background: #00B4DB;
+}
+
+input[type=checkbox] + label::before{
+  content: '+ ';
+
+}
+input[type=checkbox]:checked + label::before{
+  content: '- ';
+}
+@media screen and (max-width: 900px) {
+  #main-container {
+    flex-direction: column;
+  }
+
+}
